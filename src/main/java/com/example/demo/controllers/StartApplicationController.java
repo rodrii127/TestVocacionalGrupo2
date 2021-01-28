@@ -17,7 +17,7 @@ public interface StartApplicationController {
 				@ApiResponse(code = 404, message = "The resource you were trying to reach is not found"),
 				@ApiResponse(code = 406, message = "The resource you were trying to create is not aceptable for the page"),
 				@ApiResponse(code = 500, message = "Tech Error") 
-	})
+	})  
 	
 	@ApiOperation(value = "Ver una lista de los alumnos", response = List.class, authorizations = {@Authorization(value="Authorization")})
 	void startApplication();	
