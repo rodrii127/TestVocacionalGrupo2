@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  profiles:
+    active: local
+  jackson:
+    time-zone: America/Buenos_Aires
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:   
+    url: jdbc:postgresql://localhost/test-vocacional-grupo-2
+    username: rodrigo
+    password: 1234
